@@ -153,7 +153,21 @@ while (x < 100) {
 input x;           // reads integer from stdin
 print x;           // prints value to stdout
 ```
+## Opcodes (Instruction Set)
 
+| Opcode | Description |
+|---|---|
+| `PUSH_INT` | Push 64-bit integer onto stack |
+| `PUSH_BOOL` | Push boolean onto stack |
+| `LOAD_VAR` | Load variable value onto stack |
+| `STORE_VAR` | Store stack top into variable |
+| `ADD/SUB/MUL/DIV` | Arithmetic operations |
+| `EQUAL` / `LESS_THAN` | Comparison operations |
+| `JUMP` | Unconditional jump (loops) |
+| `JUMP_IF_FALSE` | Conditional jump (if/while) |
+| `PRINT` | Pop and print stack top |
+| `INPUT` | Read integer from stdin |
+| `HALT` | Stop execution |
 ## Requirements
 
 - C++17 compatible compiler (GCC 7+, Clang 5+, MSVC 2017+)
